@@ -7,7 +7,7 @@ from django.contrib.auth.password_validation import validate_password
 class ProfileSerializer(serializers.ModelSerializer):
     class Meta:
         model = Profile
-        fields = "__all__"
+        fields = ['leetcode_id', 'hackerrank_id', 'codechef_id']
 
 
 class UserSerializer(serializers.ModelSerializer):

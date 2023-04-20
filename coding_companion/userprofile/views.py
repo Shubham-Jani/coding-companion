@@ -9,6 +9,15 @@ class UserCreateAPIView(generics.CreateAPIView):
     queryset = User.objects.all()
     serializer_class = UserSerializer
 
+    # def post(self, request, *args, **kwargs):
+    #     user = request.data
+    #     serializer = self.serializer_class(data=user)
+    #     serializer.is_valid(raise_exception=True)
+    #     serializer.save()
+    #     user_data = serializer.data
+    #     user = User.objects.get(username=user_data["username"])
+    #     user.save()
+
 
 class UserRetrieveAPIView(generics.RetrieveAPIView):
     serializer_class = UserSerializer

@@ -40,8 +40,10 @@ INSTALLED_APPS = [
 
     'rest_framework',
     'userprofile',
+    'problem',
     'rest_framework_simplejwt',
-    "corsheaders",
+    'corsheaders',
+
 
 ]
 
